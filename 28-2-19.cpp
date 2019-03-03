@@ -24,10 +24,10 @@ public:
     }
     test operator+(test &t)
     {
-        test temp;
-        temp.a=a+t.a;
-        temp.b=b+t.b;
-        return temp;
+        test t1;
+        t1.a=a+t.a;
+        t1.b=b+t.b;
+        return t1;
     }
 };
 

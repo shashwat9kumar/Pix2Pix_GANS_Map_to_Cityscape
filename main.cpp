@@ -20,9 +20,9 @@ public:
 
 /*int main()
 {
-    hello obj1();
-    hello obj2(1);
-    hello obj3(1,2);
+    hello o1();
+    hello o2(5);
+    hello o3(3,8);
     return 0;
 }
 */
