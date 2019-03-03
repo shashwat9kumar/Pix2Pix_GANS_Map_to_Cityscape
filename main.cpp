@@ -18,11 +18,14 @@ public:
     }
 };
 
-/*int main()
+int main()
 {
     hello o1();
     hello o2(5);
     hello o3(3,8);
+    o1.show();
+    o2.show();
+    o3.show();
     return 0;
 }
-*/
+
