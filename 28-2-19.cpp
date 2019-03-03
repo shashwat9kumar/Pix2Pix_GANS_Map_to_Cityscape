@@ -31,13 +31,13 @@ public:
     }
 };
 
-/*int main()
+int main()
 {
-    test t1(3,4);
-    test t2(5,6);
+    test t1(6,7);
+    test t2(1,2);
     test t3;
     t3=t1+t2;
     t3.display();
     return 0;
 }
-*/
+

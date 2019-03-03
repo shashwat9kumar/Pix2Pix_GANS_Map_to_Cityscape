@@ -8,7 +8,7 @@ class area
 public:
     area()
     {
-        cout<<"Enter the two sides"<<endl;
+        cout<<"Enter the two sides(same if entering for a square;different if entering for a rectangle or triangle)"<<endl;
         cin>>s1>>s2;
     }
 
@@ -38,7 +38,7 @@ public:
 };
 /*int main()
 {
-    area t1;
-    t1.choice();
+    area t;
+    t.choice();
     return 0;
 }*/
