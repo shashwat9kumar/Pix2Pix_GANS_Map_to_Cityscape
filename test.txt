@@ -1,0 +1,4 @@
+This is a text file to check for staging and unstaging
+It was writtn originally on 3rd March, but now I'm modifying it on 4th March
+This is being done to test diff tool
+
