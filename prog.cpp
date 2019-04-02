@@ -1,7 +1,9 @@
 #include<iostream>
+#include<conio.h>
+#include<string.h>
 using namespace std;
 
-class calculator
+class calc
 {
 	int add(int a,int b)
 	{
