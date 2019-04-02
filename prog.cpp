@@ -28,10 +28,10 @@ class calc
 
 int main()
 {
-	cout<<add(2,3)<<endl;
-	cout<<sub(2,3)<<endl;
-	cout<<mul(2,3)<<endl;
-	cout<<div(2,3)<<endl;
+	cout<<add(7,3)<<endl;
+	cout<<sub(7,3)<<endl;
+	cout<<mul(7,3)<<endl;
+	cout<<div(7,3)<<endl;
 	return 0;
 }
 
