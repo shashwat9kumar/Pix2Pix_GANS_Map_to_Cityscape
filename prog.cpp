@@ -26,10 +26,10 @@ class calculator
 
 int main()
 {
-	cout<<add(2,3)<<endl;
-	cout<<sub(2,3)<<endl;
-	cout<<mul(2,3)<<endl;
-	cout<<div(2,3)<<endl;
+	cout<<add(4,5)<<endl;
+	cout<<sub(4,5)<<endl;
+	cout<<mul(4,5)<<endl;
+	cout<<div(4,5)<<endl;
 	return 0;
 }
 
