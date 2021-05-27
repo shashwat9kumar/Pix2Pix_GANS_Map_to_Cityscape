@@ -1,4 +1,4 @@
-package May_26;
+package May_26.shapes;
 
 public class CallShapes {
 

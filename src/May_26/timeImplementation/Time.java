@@ -1,13 +1,14 @@
-package May_26;
+package May_26.timeImplementation;
 
 public class Time {
-	private int seconds = 0;  
-	private int minutes = 0;
-	private int hours = 0;
+	
+	private double seconds = 0;  
+	private double minutes = 0;
+	private double hours = 0;
 	
 	public Time(){}
 	
-	public Time(int seconds, int minutes, int hours){
+	public Time(double seconds, double minutes, double hours){
 		this.hours = hours;
 		this.minutes = minutes;
 		this.seconds = seconds;
@@ -15,18 +16,15 @@ public class Time {
 	
 	public Time add (Time obj) {
 		this.seconds = this.seconds + obj.seconds;
-		int carryover = this.seconds / 60;
+		double carryover = this.seconds / 60;
 		this.seconds = this.seconds % 60;
-		
-//		System.out.println("Seconds:\t " + this.seconds);
+
 		
 		this.minutes = this.minutes + obj.minutes + carryover;
 		carryover = this.minutes / 60;
 		this.minutes = this.minutes % 60;
-//		System.out.println("Minutes:\t " + this.minutes);
 		
 		this.hours = this.hours + obj.hours + carryover;
-//		System.out.println("Hours:\t " + this.hours);
 		return this;
 		
 	}

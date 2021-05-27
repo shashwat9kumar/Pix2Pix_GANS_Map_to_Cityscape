@@ -1,21 +1,25 @@
-package May_26;
+package May_26.stackImplementation;
 
 import java.util.ArrayList;
 
 public class Stack {
-	private ArrayList<Integer> arr;
+	private ArrayList<Integer> stack;
 	private int top = -1;
 	
 	Stack(){
-		arr = new ArrayList<Integer>();
+		stack = new ArrayList<Integer>();
 	}
 	
 	Stack(int capacity){
-		arr = new ArrayList<Integer>(capacity);
+		stack = new ArrayList<Integer>(capacity);
+	}
+	
+	int peek() {
+		return stack.get(top);
 	}
 	
 	public void push(int element) {
-		arr.add(element);
+		stack.add(element);
 		top++;
 	}
 	
@@ -24,7 +28,8 @@ public class Stack {
 			System.out.println("No elements to pop");
 		}
 		else {
-			arr.remove(top--);
+			System.out.println("Removed element : " + peek());
+			stack.remove(top--);
 		}
 	}
 	
