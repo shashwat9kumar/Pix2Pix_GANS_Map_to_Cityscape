@@ -1,3 +1,10 @@
+/**
+ * 
+ * @author Shashwat Kumar
+ * @category Foxmula Internship
+ * 
+ */
+
 package May_26.timeImplementation;
 
 public class Time {
@@ -15,6 +22,11 @@ public class Time {
 	}
 	
 	public Time add (Time obj) {
+		
+		/*
+		 * To add two instnces of time: the calling object and the parameter object
+		 */
+		
 		this.seconds = this.seconds + obj.seconds;
 		double carryover = this.seconds / 60;
 		this.seconds = this.seconds % 60;
@@ -30,6 +42,11 @@ public class Time {
 	}
 	
 	public void show() {
+		
+		/*
+		 * To show the instance of Time as seconds, minutes and hours
+		 */
+		
 		System.out.println("Hours:\t\t " + this.hours);
 		System.out.println("Minutes:\t " + this.minutes);
 		System.out.println("Seconds:\t " + this.seconds);
@@ -40,8 +57,8 @@ public class Time {
 		Time time1 = new Time (17,45, 1);
 		Time time2 = new Time (56, 4, 5);
 		
-		Time added = time1.add(time2);
+		Time addedTime = time1.add(time2);
 		
-		added.show();
+		addedTime.show();
 	}
 }

@@ -1,15 +1,29 @@
+/**
+ * 
+ * @author Shashwat Kumar
+ * @category Foxmula Internship
+ * 
+ */
+
 package May_26.stackImplementation;
 
 import java.util.Scanner;
 
 public class UseStack {
+	
 	static void checkSameNumberofElements(Stack s1, Stack s2) {
+		
+		/*
+		 * To check if 2 instances of stack have same number of elements
+		 */
+		
 		if(s1.getNumberOfElements() == s2.getNumberOfElements()) {
 			System.out.println("Both stacks have same number of elements: " + s1.getNumberOfElements());
 		}
 	}
 
 	public static void main(String[] args) {
+		
 		Stack s1 = new Stack();
 		Stack s2 = new Stack();
 		

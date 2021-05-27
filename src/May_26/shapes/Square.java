@@ -1,3 +1,10 @@
+/**
+ * 
+ * @author Shashwat Kumar
+ * @category Foxmula Internship
+ * 
+ */
+
 package May_26.shapes;
 
 public class Square extends Parallelogram{
