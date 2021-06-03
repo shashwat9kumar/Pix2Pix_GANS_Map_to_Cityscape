@@ -8,14 +8,14 @@
 package May_31;
 
 import java.util.ArrayList;
-import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Scanner;
 
 public class Pair_Sum {
 
 	public static void main(String[] args) {
 		ArrayList<Integer> arrayList = new ArrayList<Integer>();
-		HashMap<Integer, Integer> map = new HashMap<Integer, Integer>();
+		HashSet<Integer> set = new HashSet<Integer>();
 		
 		int choice = 0;
 		Scanner sc = new Scanner(System.in);
@@ -40,8 +40,8 @@ public class Pair_Sum {
 		boolean flag = false;
 		
 		for(int i: arrayList) {
-			map.put(i, k-i);
-			if(map.containsKey(i) && map.containsKey((k-i))) {
+			set.add(i);
+			if(set.contains(k-i)) {
 				System.out.println("Array List has the pair : " + (i) + " & " + (k-i));
 				flag = true;
 				break;
