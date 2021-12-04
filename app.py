@@ -16,7 +16,7 @@ def getImage(image):
     return prediction_image
 
 
-model = tf.keras.models.load_model("Generator")
+model = tf.keras.models.load_model("https://deploymentbucketformlmodel.s3.ap-south-1.amazonaws.com/generator.h5")
 
 st.title("Pix2Pix Map to Aerial Image Generator")
 filepath = st.file_uploader(label = "Upload an image", type=['jpg', 'png'])
