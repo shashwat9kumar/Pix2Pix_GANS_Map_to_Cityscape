@@ -2,6 +2,8 @@ import streamlit as st
 from PIL import Image
 import numpy as np
 import tensorflow as tf
+import wget
+
 
 def load_image(img):
     im = Image.open(img)
@@ -16,7 +18,10 @@ def getImage(image):
     return prediction_image
 
 
-model = tf.keras.models.load_model("https://deploymentbucketformlmodel.s3.ap-south-1.amazonaws.com/generator.h5")
+url = "https://deploymentbucketformlmodel.s3.ap-south-1.amazonaws.com/generator.h5"
+filename = wget.download(url)
+model = tf.keras.models.load_model(filename)
+
 
 st.title("Pix2Pix Map to Aerial Image Generator")
 filepath = st.file_uploader(label = "Upload an image", type=['jpg', 'png'])
